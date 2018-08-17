@@ -6,11 +6,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import rest.bookSorter.holder.BookSorterRequest;
 import rest.bookSorter.holder.BookSorterResponse;
+import util.exception.OrderingException;
 
 
 public interface BookSorterController {
 
     @RequestMapping(value = "/sortBoooks", method = RequestMethod.POST)
-    BookSorterResponse sortBoooks(@RequestBody BookSorterRequest request);
+    BookSorterResponse sortBoooks(@RequestBody BookSorterRequest request) throws OrderingException;
 
 }
