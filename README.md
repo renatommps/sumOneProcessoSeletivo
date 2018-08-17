@@ -8,10 +8,10 @@ Foi utilizado no projeto, Framework Spring e sistema de automação de compilaç
 
 # Instruções
 Para rodar basta, na pasta raiz do projeto, executar o comando:
-./gradlew bootRun
+gradlew bootRun
 
 Para gerar um jar e rodar à partir dele basta utilizar, na raiz do projeto, os seguintes comandos:
-./gradlew build
+gradlew build
 java -jar build/libs/gs-rest-service-0.1.0.jar
 
 # Dependências
